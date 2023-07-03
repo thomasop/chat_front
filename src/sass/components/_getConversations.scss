@@ -1,0 +1,266 @@
+.getConversations {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    &__div {
+        cursor: pointer;
+        background-color: white;
+        padding: 10px;
+        border: 2px solid aqua;
+        &--color {
+            cursor: pointer;
+            background-color: blue;
+            padding: 10px;
+            border: 2px solid aqua;
+        }
+    }
+    &__h1 {
+        color: black;
+        margin: 0;
+        text-align: left;
+        &--color {
+            color: white;
+            margin: 0;
+            text-align: left;
+        }
+    }
+    &__content {
+        color: black;
+        margin: 0;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        &--color {
+            color: white;
+            margin: 0;
+            text-align: left;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    &__date {
+        color: black;
+        margin: 0;
+        text-align: left;
+        font-style: italic;
+        &--div {
+            display: flex;
+        }
+        &--color {
+            color: white;
+            margin: 0;
+            text-align: left;
+            font-style: italic;
+        }
+    }
+    &__p {
+        text-align: left;
+        margin: 0;
+        &--color {
+            color: white;
+            text-align: left;
+            margin: 0;
+        }
+    }
+    &__new {
+        background-color: blue;
+        padding: 2px 4px;
+        margin-left: 10px;
+        color: white;
+        border-radius: 5px;
+        &--color {
+            background-color: white;
+            color: black;
+            padding: 2px 4px;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+    }
+}
+.getAll {
+    height: calc(100% - 50px);
+    display: flex;
+    &__div{
+        width: 218px;
+        border-radius: 10px;
+        background-color: blue;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+
+.getMessage {
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    width: 560px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    &__writing {
+        margin: 0;
+        color: white;
+    }
+    &__new {
+        background-color: blue;
+        padding: 3px 5px;
+        color: white;
+        border-radius: 5px;
+    }
+    &__none {
+        text-align: center;
+        justify-content: center;
+    }
+    &__h1 {
+        position: fixed;
+        margin-top: 0;
+        top: 10px;
+    }
+    &__btn {
+        position: absolute;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 37px;
+        padding: 10px 0px;
+        border-radius: 41%;
+        border: none;
+        background-color: blue;
+        bottom: 66px;
+    }
+    &__div {
+        &--h3 {
+            text-align: center;
+        }
+        &--date {
+            font-style: italic;
+            text-align: left;
+        }
+        &--float {
+            display: flex;
+            justify-content: end;
+        }
+        &--flex {
+            display: flex;
+            flex-direction: column;
+            margin-top: 80px;
+        }
+        &--size {
+            width: 200px;
+            border-radius: 10px;
+            border: 4px solid aqua;
+            padding: 5px;
+            margin-left: 10px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        &--sizefloat {
+            padding: 5px;
+            border-radius: 10px;
+            border: 4px solid blue;
+            text-align: end;
+            padding-right: 10px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        &--content {
+            text-align: left;
+        }
+    }
+    &__sending {
+        position: fixed;
+        background-color: blue;
+        padding: 5px;
+        bottom: 0;
+        border-radius: 5px;
+        width: 539px;
+        z-index: 1;
+        margin-bottom: 6px;
+    }
+    &__send {
+        display: flex;
+        justify-content: space-between;
+        &--input {
+            width: 75%;
+            border-radius: 5px;
+        }
+        &--btn {
+            padding: 0 5px;
+            background-color: aqua;
+            border: none;
+            border-radius: 5px;
+        }
+        &--color {
+            color: white;
+        }
+    }
+    
+}
+@include mobile {
+    .getMessage {
+        margin-top: 60px;
+        display: none;
+        width: 100%;
+        padding: unset;
+        &__back {
+            position: absolute;
+            top: 67px;
+            left: 10px;
+            font-size: 20px;
+        }
+        &__h1 {
+            left: 50%;
+            transform: translateX(-50%);
+            top: 60px;
+        }
+        &__sending {
+            width: 100%;
+            margin-bottom: unset;
+            border-radius: unset;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        &__none {
+            display: none;
+        }
+        &__div {
+            &--flex {
+                margin-bottom: 50px;
+                padding-top: 20px;
+            }
+            &--date {
+                margin: 5px 0px;
+            }
+            &--h3 {
+                margin: 5px 0px;
+            }
+            &--size {
+                width: 175px;
+                margin-left: 5px;
+            }
+            &--sizefloat {
+                width: 175px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .getAll {
+        height: calc(100% - 43px);
+        &__div{
+            width: 100%;
+            margin-left: unset;
+            border-radius: unset;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+    
+}

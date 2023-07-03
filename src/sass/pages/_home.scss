@@ -1,0 +1,40 @@
+.home {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aqua;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 18px 3px aqua;
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__redirect {
+        text-align: center;
+    }
+    &__redirectLink {
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+    }
+}
+
+@include mobile {
+    .home {
+        width: 100%;
+        position: unset;
+        left: unset;
+        top: unset;
+        transform: unset;
+        border-radius: unset;
+        box-shadow: unset;
+        height: 100%;
+    }
+    
+}

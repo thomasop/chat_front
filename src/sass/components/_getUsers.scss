@@ -1,0 +1,85 @@
+.search {
+    &__input {
+        padding: 10px;
+        border: none;
+        margin: 10px 0px 0px 10px;
+        border-radius: 10px;
+        width: 218px;
+    }
+    &__div {
+        position: absolute;
+        background-color: white;
+        padding: 10px;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 218px;
+        margin-left: 10px;
+        border-radius: 10px;
+        max-height: 200px;
+        overflow-y: scroll;
+        box-shadow: 4px 4px 8px 1px black;
+        &--error {
+            color: red;
+        }
+    }
+    &__btn {
+        margin-top: 5px;
+    }
+}
+
+.logout {
+    padding: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aqua;
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__content {
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    &__btn {
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+    &__h4 {
+        margin: 10px 0 0 0;
+    }
+    &__errorMessage {
+        display: none;
+        background-color: white;
+        color: red;
+        padding: 3px 5px 5px 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    &__errorMessages {
+        display: none;
+        background-color: white;
+        color: red;
+        padding: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}

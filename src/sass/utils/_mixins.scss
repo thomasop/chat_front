@@ -1,0 +1,9 @@
+@import "./maps";
+
+/* Mixins for responsive device */
+
+@mixin mobile {
+    @media screen and (max-width: map-get($break, mobilewidth)) {
+        @content
+    }
+}
