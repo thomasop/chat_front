@@ -13,7 +13,7 @@ const Logout = (): null => {
   const { token, userId } = useSelector((state: RootState) => state.login);
   useEffect(() => {
     const logout = async () => {
-      const response = await fetch("http://localhost:8080/user/logout", {
+      const response = await fetch("https://devops-workshop-api-ted65ogcgq-ew.a.run.app/user/logout", {
         headers: {
           authorization: "Bearer " + token,
           Accept: "application/json",

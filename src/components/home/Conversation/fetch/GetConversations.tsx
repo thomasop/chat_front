@@ -22,7 +22,7 @@ const GetConversations = ({ setDatas }: Proptype): null => {
   useEffect(() => {
     const getDatas = async () => {
       let response = await fetch(
-        `http://localhost:8080/conversation/all/${userId}`,
+        `https://devops-workshop-api-ted65ogcgq-ew.a.run.app/conversation/all/${userId}`,
         {
           headers: {
             authorization: "Bearer " + token,

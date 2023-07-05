@@ -81,7 +81,7 @@ const LoginForm = (): JSX.Element => {
       )}
       <form
         className="loginForm"
-        action="http://localhost:8080/user/login"
+        action="https://devops-workshop-api-ted65ogcgq-ew.a.run.app/user/login"
         method="post"
         onSubmit={handleSubmit}
       >

@@ -12,7 +12,7 @@ const GetUsers = (): null => {
   const dispatch = useDispatch();
   useEffect(() => {
     const getDatas = async () => {
-      let response = await fetch("http://localhost:8080/user/all", {
+      let response = await fetch("https://devops-workshop-api-ted65ogcgq-ew.a.run.app/user/all", {
         headers: {
           authorization: "Bearer " + token,
         },

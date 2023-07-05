@@ -45,7 +45,7 @@ const Modal = (): JSX.Element => {
       <p>Envoyer lui un message pour créer une conversation</p>
       <form
         className="modal__form"
-        action="http://localhost:8080/addConversation"
+        action="https://devops-workshop-api-ted65ogcgq-ew.a.run.app/addConversation"
         method="post"
         onSubmit={(e) => {
           e.preventDefault();

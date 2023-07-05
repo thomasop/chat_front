@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../../utils/store";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:8080");
+const socket = io("https://devops-workshop-api-ted65ogcgq-ew.a.run.app");
 
 /**
  * React component - Fetch add message
@@ -27,7 +27,7 @@ const AddMessage = (): JSX.Element => {
   };
   const handlerSubmit = () => {
     const addMessage = async () => {
-      let response = await fetch("http://localhost:8080/message/add", {
+      let response = await fetch("https://devops-workshop-api-ted65ogcgq-ew.a.run.app/message/add", {
         method: "post",
         body: JSON.stringify({
           content: inputMessage,

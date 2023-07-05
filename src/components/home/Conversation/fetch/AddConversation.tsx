@@ -10,7 +10,7 @@ interface Proptype {
   setDisplayAddConversation: Dispatch<SetStateAction<boolean>>;
 }
 
-const socket = io("http://localhost:8080");
+const socket = io("https://devops-workshop-api-ted65ogcgq-ew.a.run.app");
 
 /**
  * React component - Fetch add conversation
@@ -31,7 +31,7 @@ const AddConversation = ({
   const { token, userId } = useSelector((state: RootState) => state.login);
   useEffect(() => {
     const addConversation = async () => {
-      const response = await fetch("http://localhost:8080/conversation/add", {
+      const response = await fetch("https://devops-workshop-api-ted65ogcgq-ew.a.run.app/conversation/add", {
         method: "POST",
         headers: {
           Accept: "application/json",

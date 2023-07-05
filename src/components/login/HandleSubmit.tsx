@@ -27,7 +27,7 @@ const HandleSubmit = ({
   let navigate = useNavigate();
   useEffect(() => {
     const getUser = async () => {
-      const response = await fetch("http://localhost:8080/user/login", {
+      const response = await fetch("https://devops-workshop-api-ted65ogcgq-ew.a.run.app/user/login", {
         method: "POST",
         credentials: "include",
         headers: {

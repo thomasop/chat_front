@@ -11,7 +11,7 @@ import {
 import AddMessage from "../fetch/AddMessage";
 
 
-const socket = io("http://localhost:8080");
+const socket = io("https://devops-workshop-api-ted65ogcgq-ew.a.run.app");
 
 /**
  * React component - Display all messages

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../../../utils/store";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:8080");
+const socket = io("https://devops-workshop-api-ted65ogcgq-ew.a.run.app");
 interface Proptype {
   setEditMessage: Dispatch<SetStateAction<boolean>>;
 }
@@ -22,7 +22,7 @@ const EditMessage = ({ setEditMessage }: Proptype): null => {
   useEffect(() => {
     const fetchEdit = async () => {
       let response = await fetch(
-        `http://localhost:8080/message/edit/${conversationId}/${otherIdUser}`
+        `https://devops-workshop-api-ted65ogcgq-ew.a.run.app/message/edit/${conversationId}/${otherIdUser}`
       );
       let json = await response.json();
       if (json.result.length > 0) {

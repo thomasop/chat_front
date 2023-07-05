@@ -6,7 +6,7 @@ import { io } from "socket.io-client";
 import EditMessage from "../../Message/fetch/EditMessage";
 import { DataConversation, Message } from "../../../../types/data/DataType";
 
-const socket = io("http://localhost:8080");
+const socket = io("https://devops-workshop-api-ted65ogcgq-ew.a.run.app");
 
 /**
  * React component - Display all conversation
