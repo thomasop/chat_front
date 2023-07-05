@@ -40,6 +40,7 @@ const HandleSubmit = ({
         }),
       });
       let json = await response.json();
+      console.log(json)
       if (json.errors) {
         setFormSend(false);
         if (typeof json.errors == "object") {
