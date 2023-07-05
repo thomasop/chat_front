@@ -1,4 +1,4 @@
-import {configureStore, getDefaultMiddleware} from "@reduxjs/toolkit"
+import {configureStore} from "@reduxjs/toolkit"
 import { login } from "../features/login"
 import { modal } from "../features/modal"
 import { user } from "../features/user"

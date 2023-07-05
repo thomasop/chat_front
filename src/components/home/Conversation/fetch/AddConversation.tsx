@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../../utils/store";
 import { io } from "socket.io-client";
@@ -26,7 +26,6 @@ const AddConversation = ({
   setDisplayAddConversation,
 }: Proptype): null => {
   const dispatch = useDispatch();
-  const [formSend, setFormSend] = useState<boolean>(false);
   const { userIdAdd } = useSelector((state: RootState) => state.modal);
   const { token, userId } = useSelector((state: RootState) => state.login);
   useEffect(() => {
@@ -83,7 +82,6 @@ const AddConversation = ({
     content,
     dispatch,
     setDisplayAddConversation,
-    setFormSend,
     setInputErrorPassword,
     token,
     userId,

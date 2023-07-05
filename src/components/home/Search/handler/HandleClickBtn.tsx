@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React, { Dispatch } from "react";
 import { useDispatch } from "react-redux";
 import { User } from "../../../../types/data/DataType";
 
